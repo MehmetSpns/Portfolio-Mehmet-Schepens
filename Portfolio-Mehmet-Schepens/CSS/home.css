@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(26, 25, 25);
+  height: 100vh;
+  margin: 0;
+  font-family: "Kode Mono", monospace;
+  background-image: url(/Pictures/login-background.jpg);
+}
+header {
+  color: white;
+  padding-left: 25px;
+  background-color: rgb(14, 13, 13);
+}
+header h1 {
+  margin-right: 10px;
+  font-size: larger;
+  text-shadow: 0 0 5px white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#headL-container {
+  display: flex;
+  flex-direction: row;
+}
+#headR-container {
+  margin-right: 50px;
+}
+main h1 {
+  color: white;
+  background-color: rgb(14, 13, 13);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  font-size: 20px;
+}
+#container-calendar {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+#container-notes {
+  margin-right: 50px;
+}
+
+#logOut{
+  width: 30px;
+}
+#navigation{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#left-nav{
+  display: flex;
+  align-items: center;
+}
+#right-nav{
+  display: flex;
+  align-items:end;
+  margin: 15px;
+}

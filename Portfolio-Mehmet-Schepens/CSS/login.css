@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(26, 25, 25);
+    height: 100vh;
+    margin: 0;
+    font-family: "Kode Mono", monospace;
+    background-image: url(/Pictures/login-background.jpg);
+}
+
+.login-form {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 15px 60px 60px 60px;
+    border-radius: 10px;
+    margin: 50px;
+    box-shadow: 0 0 10px white ;
+    font-weight: bold;
+}
+
+#login-button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    
+}
+#login-button:hover{
+    box-shadow: 0 0 10px black ;
+}
+
+#p-i {
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px white ;
+}
+ .input{
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 0 0 5px black ;  
+ }
+ label, .input {
+    margin-bottom: 10px;
+ }
+ header{
+    color: white;
+ }
+
+ #help-button{
+    margin-left: 100% ;
+    width: 40px;
+ }
+ #help-button:hover{
+    width: 43px;
+ }
