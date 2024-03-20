@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Kode Mono", monospace;
-  background-image: url(/Pictures/login-background.jpg);
+  background-image: url(/Portfolio-Mehmet-Schepens/Pictures/login-background.jpg);
 }
 header {
   color: white;
@@ -65,4 +65,3 @@ main h1 {
   align-items:end;
   margin: 15px;
 }
-/**/
