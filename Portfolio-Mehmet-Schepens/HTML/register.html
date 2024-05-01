@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio-Mehmet</title>
+  <link rel="stylesheet" href="/Portfolio-Mehmet-Schepens/CSS/register.css">
+  <link rel="icon" href="/Pictures/PF.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3376bc5c4d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Register</h1>
-    <form id="registerForm">
-      <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
-      </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-      </div>
-      <div>
-        <button type="submit"><a href="/Portfolio-Mehmet-Schepens/HTML/login.html">Register</a></button>
-      </div>
-    </form>
-  </div>
-  
-  <script src="script.js"></script>
+  <header>
+    
+  </header>
+  <main>
+    
+    <div class="login-form">
+      <form>
+        
+        <a href="mailto:mehmet.schepens@student.ehb.be" onmouseover="PointerEvent"><img alt="help-icon" id="help-button"
+            src="/Portfolio-Mehmet-Schepens/Pictures/help.png"></a>
+
+        <div class="profile-icon">
+          <img id="p-i" src="/Portfolio-Mehmet-Schepens/Pictures/profile-icon.png" alt="profil-icon">
+        </div>
+        <label for="name">Username.</label><br>
+        <div id="username2">
+          <i id="username-logo" class="fa-solid fa-user"></i>
+          <input id="username" class="input" type="text" placeholder="Enter username." name="name" required><br>
+        </div>
+        <label for="password">Password.</label><br>
+        <div id="password2">
+          <i id="password-logo" class="fa-solid fa-lock"></i>
+          <input id="password" class="input" type="password" placeholder="4-Digits." name="password" required><br>
+        </div>
+        
+
+        <button id="save-button" type="submit" onmouseover="loginHover()" onmouseout="loginOut()" onclick="saveData()">Register</button><br>
+
+
+      </form>
+      <p>Have an account? <a href="login.html">Login.</a></p>
+    </div>
+  </main>
+  <footer>
+    <p1>
+      Site made by<br>Mehmet Schepens
+    </p1>
+  </footer>
+  <script src="/Portfolio-Mehmet-Schepens/JS/register.js"></script>
 </body>
+
 </html>

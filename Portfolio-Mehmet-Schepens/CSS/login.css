@@ -19,6 +19,7 @@ body {
     margin: 50px;
     box-shadow: 0 0 10px white ;
     font-weight: bold;
+    width: 300px;
 }
 #username{
     display: flex;
