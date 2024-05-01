@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Mehmet S.</title>
+    <title>Portfolio-Mehmet</title>
     <link rel="stylesheet" href="/Portfolio-Mehmet-Schepens/CSS/login.css">
     <link rel="icon" href="/Pictures/PF.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3376bc5c4d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-       
+
     </header>
     <main>
         <div class="login-form">
-        <form>
-            <a href="mailto:mehmet.schepens@student.ehb.be" onmouseover="PointerEvent"><img alt="help-icon" id="help-button" src="/Portfolio-Mehmet-Schepens/Pictures/help.png"></a>
+            <form>
+                <a href="mailto:mehmet.schepens@student.ehb.be" onmouseover="PointerEvent"><img alt="help-icon"
+                        id="help-button" src="/Portfolio-Mehmet-Schepens/Pictures/help.png"></a>
 
-            <div class="profile-icon">
-                <img id="p-i" src="/Portfolio-Mehmet-Schepens/Pictures/profile-icon.png" alt="profil-icon">
-            </div>
-            <label for="name">Username.</label><br>
-            <input id="username" class="input" type="text" placeholder="Enter username..." name="name" required><br>
-            <label for="password">Password.</label><br>
-            <input id="password" class="input" type="password" placeholder="4-Digits." name="password" required><br>
-            <button id="login-button" href="#" type="submit" onmouseover="loginHover()" onmouseout="loginOut()">Sign in</button><br>
-        </form>
-    </div>
+                <div class="profile-icon">
+                    <img id="p-i" src="/Portfolio-Mehmet-Schepens/Pictures/profile-icon.png" alt="profil-icon">
+                </div>
+                <label for="name">Username.</label><br>
+                <div id="username">
+                    <i id="username-logo" class="fa-solid fa-user"></i>
+                    <input id="username2" class="input" type="text" placeholder="Enter username..." name="name"
+                        required><br>
+                </div>
+                <label for="password">Password.</label><br>
+                <div id="password">
+                    <i id="password-logo" class="fa-solid fa-lock"></i>
+                    <input id="password2" class="input" type="password" placeholder="4-Digits." name="password"
+                        required><br>
+                </div>
+
+                <button id="login-button" type="submit" onmouseover="loginHover()" onmouseout="loginOut()">Sign in</button><br>
+
+
+            </form>
+            <p>Don't have an account? <button id="register-button">Register.</button></p>
+        </div>
     </main>
     <footer>
         <p1>
@@ -35,4 +51,5 @@
     </footer>
     <script src="/Portfolio-Mehmet-Schepens/JS/script.js"></script>
 </body>
+
 </html>

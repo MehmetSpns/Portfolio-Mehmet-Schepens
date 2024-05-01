@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-home</title>
-    <link rel="stylesheet" href="/Portfolio-Mehmet-Schepens/CSS/home.css" />
-    <link rel="icon" href="/Pictures/PF.png" type="image/png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <audio id="audio" src="/Sound/Doewam.mp3"></audio>
-    <header>
-      <div id="navigation">
-        <div id="left-nav">
-          <div id="nav-item"><h1 id="clock"></h1></div>
-          <div id="nav-item"><h1 id="|">|</h1></div>
-          <div id="nav-item"><h1 id="template-literal"></h1></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-home</title>
+  <link rel="stylesheet" href="/Portfolio-Mehmet-Schepens/CSS/home.css" />
+  <link rel="icon" href="/Pictures/PF.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <audio id="audio" src="/Sound/Doewam.mp3"></audio>
+  <header>
+    <div id="navigation">
+      <div id="left-nav">
+        <div id="nav-item">
+          <h1 id="clock"></h1>
         </div>
-        <div id="right-nav">
-          <a href="/HTML/login.html"
-            ><img src="/Portfolio-Mehmet-Schepens/Pictures/logout.png" id="logOut" alt="LogOut"
-          /></a>
+        <div id="nav-item">
+          <h1 id="|">|</h1>
         </div>
-      </div>
-    </header>
-    <main>
-      <div id="head-container">
-        <div id="headL-container">
-          <div id="container-calendar">
-            <h1>Calendar</h1>
-          </div>
-          <div id="container-notes">
-            <h1>Notes</h1>
-          </div>
-        </div>
-        <div id="headR-container">
-          <h1>MAPS</h1>
+        <div id="nav-item">
+          <h1 id="template-literal"></h1>
         </div>
       </div>
-      <div id="mid-container">
-        
+      <div id="right-nav">
+        <a href="/Portfolio-Mehmet-Schepens/HTML/login.html"><img src="/Portfolio-Mehmet-Schepens/Pictures/logout.png" id="logOut"
+            alt="LogOut" /></a>
       </div>
-    </main>
-    <footer></footer>
-    <script src="/Portfolio-Mehmet-Schepens/JS/home.js"></script>
-  </body>
+    </div>
+  </header>
+  <main>
+    <div id="head-container">
+      <div id="headL-container">
+        <div id="container-calendar">
+          <h1>Calendar</h1>
+        </div>
+        <div id="container-notes">
+          <h1>Notes</h1>
+        </div>
+      </div>
+      <div id="headR-container">
+        <h1>MAPS</h1>
+      </div>
+    </div>
+    <div id="mid-container">
+      <div id="notas">
+        <h1 id="note">Notes</h1>
+        <textarea id="note-container" rows="10" placeholder="Voer hier je nota's"></textarea>
+        <button id="buttonNota" onclick="addNote()">Opslaan</button>
+      </div>
+      <div id="calendar"></div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="/Portfolio-Mehmet-Schepens/JS/home.js"></script>
+</body>
+
 </html>

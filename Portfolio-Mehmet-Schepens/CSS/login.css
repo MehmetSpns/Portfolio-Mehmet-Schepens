@@ -20,6 +20,19 @@ body {
     box-shadow: 0 0 10px white ;
     font-weight: bold;
 }
+#username{
+    display: flex;
+    gap: 10px;
+}
+#username-logo, #password-logo{
+    padding-top: 5px;
+    align-items: center;
+}
+
+#password{
+    display: flex;
+    gap: 10px;
+}
 
 #login-button {
     margin-top: 20px;
@@ -70,4 +83,18 @@ footer {
  }
  #help-button:hover{
     width: 43px;
+ }
+ #register-button{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: smaller;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+ }
+ #register-button:hover{
+    background-color: rgb(26, 26, 26);
  }

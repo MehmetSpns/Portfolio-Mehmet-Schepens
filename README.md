@@ -1,9 +1,9 @@
-Elementen selecteren 
-Elementen manipuleren
-Event aan een element koppelen
-Formulier valideren
-Gebruiken van een constante
-Gebruiken van template literals
+Elementen selecteren --> DONE
+Elementen manipuleren --> DONE
+Event aan een element koppelen --> DONE
+Formulier valideren --> DONE
+Gebruiken van een constante --> DONE
+Gebruiken van template literals --> DONE
 Destructuring
 Spread & Rest operator
 Iteration over een array
@@ -14,7 +14,7 @@ Consumer methods
 Async & Await
 Self executing function
 Fetch om data op te halen
-JSON manipuleren en weergeven
-Basis CSS Animatie
-Gebruiken van een flexbox of CSS grid
-Gebruik van LocalStorage
+JSON manipuleren en weergeven --> IN PROCESS
+Basis CSS Animatie --> DONE
+Gebruiken van een flexbox of CSS grid --> DONE
+Gebruik van LocalStorage --> IN PROCESS

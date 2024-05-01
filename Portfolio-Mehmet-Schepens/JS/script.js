@@ -2,17 +2,18 @@
 
 console.log("Linked succesfully!");
 
-document.getElementById('login-button').addEventListener('click', function(){
+document.getElementById('login-button').addEventListener('click', function(event) {
     event.preventDefault();
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    var username = document.getElementById('username2').value;
+    var password = document.getElementById('password2').value;
 
     if(username === 'Mehmet' && password === '1002'){
         window.location.href = 'home.html';  
     }else{
-        alert('Ongeldige gegevens, probeer opnieuw!')
+        alert('Invalid credentials, please try again!');
     }
 });
+
 
 function loginHover(){
     document.getElementById('login-button').innerHTML = "sure?";
@@ -21,6 +22,5 @@ function loginHover(){
 function loginOut(){
     document.getElementById('login-button').innerHTML = "Sign in";
 }
-
 
 

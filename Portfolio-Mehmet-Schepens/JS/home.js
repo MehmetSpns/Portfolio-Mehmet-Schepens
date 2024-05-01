@@ -16,3 +16,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const welcomeZin = document.getElementById('template-literal');
     welcomeZin.innerHTML = zin;
 });
+
+
+
+
+function addNote(){
+    var noteContainer = document.getElementById("note-container").value;
+    if (noteContainer.trim() !== ""){
+        var notes = JSON.parse(localStorage.getItem("notes")) || [];
+        notes.push(noteContainer);
+        localStorage.setItem("notes", JSON.stringify(notes));
+        showNotes();
+        document.getElementById("note-container").value = "";
+    }
+    else{
+        alert("ERROR: uw notitie is leeg, vul eerst iets in :/")
+    }
+}
+
+
+

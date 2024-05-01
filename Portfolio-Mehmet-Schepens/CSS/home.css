@@ -47,7 +47,6 @@ main h1 {
 #container-notes {
   margin-right: 50px;
 }
-
 #logOut{
   width: 30px;
 }
@@ -64,4 +63,26 @@ main h1 {
   display: flex;
   align-items:end;
   margin: 15px;
+}
+#mid-container{
+  display: flex;
+  align-items: center;
+  font-size: larger;
+}
+#note-container{
+  background-color: rgb(14, 13, 13);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom:10px ;
+}
+#notas{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left:20px;
+}
+#buttonNota{
+  background-color: rgb(14, 13, 13);
+  color: white;
 }
