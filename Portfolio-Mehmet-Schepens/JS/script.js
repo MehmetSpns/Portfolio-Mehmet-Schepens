@@ -11,20 +11,27 @@ function loginOut() {
 }
 
 
-function saveData() {
-    let username, password;
-    username = document.getElementById('username').value;
-    password = document.getElementById('password').value;
+function checkLogs() {
+    var username = document.getElementById('username2').value.trim();
+    var password = document.getElementById('password2').value.trim();
 
-    let user_records = JSON.parse(localStorage.getItem('user_records')) || [];
-    if (user_records.some((v) => {
-        return v.username == username && v.password == password;
-    })) {
-        alert("Login successful!");
-        setTimeout(() => {
-            window.location.href = '/Portfolio-Mehmet-Schepens/HTML/home.html';
-        }, 100);
+    var users = JSON.parse(localStorage.getItem('users'));
+
+    var user = users.find((user) => user.username === username);
+    console.log(user);
+    if (user) {
+        if (user.password === password) {
+            setTimeout(() => {
+                window.location.href = '/Portfolio-Mehmet-Schepens/HTML/home.html';
+            }, 100);
+        } else {
+            alert('Wrong password!');
+        }
     } else {
-        alert("Invalid credentials, please try again!");
+        alert('Username does not exist!');
     }
 }
+
+
+
+

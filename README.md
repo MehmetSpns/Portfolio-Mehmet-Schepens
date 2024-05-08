@@ -7,14 +7,14 @@ Gebruiken van template literals --> DONE
 Destructuring
 Spread & Rest operator
 Iteration over een array
-Arrow function
+Arrow function --> DONE
 Callback function
 Promise
 Consumer methods
-Async & Await
+Async & Await --> use it with fetch!!!
 Self executing function
-Fetch om data op te halen
-JSON manipuleren en weergeven --> IN PROCESS
-Basis CSS Animatie --> DONE
+Fetch om data op te halen 
+JSON manipuleren en weergeven --> DONE
+Basis CSS Animatie 
 Gebruiken van een flexbox of CSS grid --> DONE
-Gebruik van LocalStorage --> IN PROCESS
+Gebruik van LocalStorage --> DONE

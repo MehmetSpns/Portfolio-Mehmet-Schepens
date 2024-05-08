@@ -37,7 +37,7 @@ main h1 {
   background-color: rgb(14, 13, 13);
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(20, 106, 226);
   font-size: 20px;
 }
 #container-calendar {
@@ -75,6 +75,7 @@ main h1 {
   border-radius: 10px;
   padding: 20px;
   margin-bottom:10px ;
+  margin-top: 20px;
 }
 #notas{
   align-items: center;

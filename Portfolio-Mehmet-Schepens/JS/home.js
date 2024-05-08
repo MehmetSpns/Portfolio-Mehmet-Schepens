@@ -1,6 +1,6 @@
 'use strict'
 
-function displayTime(){
+function displayTime() {
     var d = new Date();
     var hour = d.getHours();
     var min = d.getMinutes();
@@ -16,23 +16,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const welcomeZin = document.getElementById('template-literal');
     welcomeZin.innerHTML = zin;
 });
-
-
-
-
-function addNote(){
+addNote = () => {
     var noteContainer = document.getElementById("note-container").value;
-    if (noteContainer.trim() !== ""){
+    if (noteContainer.trim() !== "") {
         var notes = JSON.parse(localStorage.getItem("notes")) || [];
         notes.push(noteContainer);
         localStorage.setItem("notes", JSON.stringify(notes));
         showNotes();
         document.getElementById("note-container").value = "";
     }
-    else{
+    else {
         alert("ERROR: uw notitie is leeg, vul eerst iets in :/")
     }
 }
+showNotes = () => {
+
+}
+
 
 
 

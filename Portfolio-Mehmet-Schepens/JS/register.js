@@ -11,25 +11,28 @@ function loginOut() {
 }
 
 function saveData() {
-    let username = document.getElementById('username').value.trim();
-    let password = document.getElementById('password').value.trim();
+    var username = document.getElementById('username').value.trim();
+    var password = document.getElementById('password').value.trim();
 
     if (!username || !password) {
         alert("Please fill in all fields!");
         return;
     }
 
-    let user_records = JSON.parse(localStorage.getItem('user_records')) || [];
-    if (user_records.some((v) => v.username === username)) {
+    var users = JSON.parse(localStorage.getItem('users')) || [];
+    if (users.some((v) => v.username === username)) {
         alert("Username already exists");
+        return;
     } else {
-        user_records.push({
+        users.push({
             "username": username,
             "password": password
         });
-        localStorage.setItem("user_records", JSON.stringify(user_records));
+        localStorage.setItem("users", JSON.stringify(users));
         setTimeout(() => {
             window.location.href = '/Portfolio-Mehmet-Schepens/HTML/login.html';
         }, 100);
+        return;
     }
 }
+
