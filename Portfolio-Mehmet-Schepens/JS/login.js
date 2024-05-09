@@ -17,7 +17,7 @@ function checkLogs() {
 
     var users = JSON.parse(localStorage.getItem('users'));
 
-    var user = users.find((user) => user.username === username);
+    var user = users.find((user) => user.username === username)  || [];
     console.log(user);
     if (user) {
         if (user.password === password) {

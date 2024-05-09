@@ -16,23 +16,59 @@ document.addEventListener('DOMContentLoaded', function () {
     const welcomeZin = document.getElementById('template-literal');
     welcomeZin.innerHTML = zin;
 });
-addNote = () => {
-    var noteContainer = document.getElementById("note-container").value;
-    if (noteContainer.trim() !== "") {
-        var notes = JSON.parse(localStorage.getItem("notes")) || [];
-        notes.push(noteContainer);
-        localStorage.setItem("notes", JSON.stringify(notes));
-        showNotes();
-        document.getElementById("note-container").value = "";
-    }
-    else {
-        alert("ERROR: uw notitie is leeg, vul eerst iets in :/")
-    }
-}
-showNotes = () => {
 
+const notesContainer = document.getElementById("notes");
+const addNoteButton = notesContainer.querySelector(".add_note");
+
+getNotes().forEach((note) => {
+  const noteElement = createNoteElement(note.id, note.content);
+  notesContainer.insertBefore(noteElement, addNoteButton);
+});
+
+addNoteButton.addEventListener("click", () => addNote());
+
+function getNotes() {
+  return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
 }
 
+function saveNotes(notes) {
+  localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
+}
+
+function createNoteElement(id, content) {
+  const element = document.createElement("textarea");
+
+  element.classList.add("note");
+  element.value = content;
+  element.placeholder = "type hier...";
+
+  element.addEventListener("change", () => {
+    modifyNote(id, element.value);
+  });
+  return element;
+}
+
+function addNote() {
+  const notes = getNotes();
+  const noteObject = {
+    id: Math.floor(Math.random() * 100000),
+    content: ""
+  };
+
+  const noteElement = createNoteElement(noteObject.id, noteObject.content);
+  notesContainer.insertBefore(noteElement, addNoteButton);
+
+  notes.push(noteObject);
+  saveNotes(notes);
+}
+
+function modifyNote(id, newContent) {
+  const notes = getNotes();
+  const targetNote = notes.filter((note) => note.id == id)[0];
+
+  targetNote.content = newContent;
+  saveNotes(notes);
+}
 
 
 
