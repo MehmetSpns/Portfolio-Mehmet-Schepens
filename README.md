@@ -18,3 +18,12 @@ JSON manipuleren en weergeven --> DONE
 Basis CSS Animatie 
 Gebruiken van een flexbox of CSS grid --> DONE
 Gebruik van LocalStorage --> DONE
+
+DOCUMENTATIE;
+
+Add functie voor de notes:
+https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13 
+Delete functie voor de notes :
+https://blog.logrocket.com/localstorage-javascript-complete-guide/ 
+https://chat.openai.com/share/7f3df148-ee64-4d09-b03d-83d008d68d3e 
+

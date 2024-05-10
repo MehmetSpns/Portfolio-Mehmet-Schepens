@@ -1,20 +1,9 @@
-'use strict'
-
-function displayTime() {
-    var d = new Date();
-    var hour = d.getHours();
-    var min = d.getMinutes();
-    var sec = d.getSeconds();
-    document.getElementById('clock').innerHTML = hour + ':' + min + ':' + sec;
-}
-setInterval(displayTime, 1000);
-
 document.addEventListener('DOMContentLoaded', function () {
-    const welcome = "Welcome";
-    const zin = `${welcome} to my personal diary!`;
+  const welcome = "Welcome";
+  const zin = `${welcome} to my personal diary!`;
 
-    const welcomeZin = document.getElementById('template-literal');
-    welcomeZin.innerHTML = zin;
+  const welcomeZin = document.getElementById('template-literal');
+  welcomeZin.innerHTML = zin;
 });
 
 const notesContainer = document.getElementById("notes");
@@ -27,23 +16,34 @@ getNotes().forEach((note) => {
 
 addNoteButton.addEventListener("click", () => addNote());
 
+notesContainer.addEventListener("dblclick", (event) => {
+  if (event.target.classList.contains("note")) {
+    const noteId = event.target.dataset.id;
+    const confirmation = window.confirm("Ben je wel zeker dat je deze note wilt verwijderen?");
+    if (confirmation) {
+      removeNoteAndElement(noteId, event.target);
+    }
+  }
+});
+
 function getNotes() {
-  return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
+  return JSON.parse(localStorage.getItem("notes") || "[]");
 }
 
 function saveNotes(notes) {
-  localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
+  localStorage.setItem("notes", JSON.stringify(notes));
 }
 
 function createNoteElement(id, content) {
   const element = document.createElement("textarea");
 
   element.classList.add("note");
+  element.dataset.id = id;
   element.value = content;
   element.placeholder = "type hier...";
 
   element.addEventListener("change", () => {
-    modifyNote(id, element.value);
+      modifyNote(id, element.value);
   });
   return element;
 }
@@ -51,8 +51,8 @@ function createNoteElement(id, content) {
 function addNote() {
   const notes = getNotes();
   const noteObject = {
-    id: Math.floor(Math.random() * 100000),
-    content: ""
+      id: Math.floor(Math.random() * 100000),
+      content: ""
   };
 
   const noteElement = createNoteElement(noteObject.id, noteObject.content);
@@ -64,11 +64,17 @@ function addNote() {
 
 function modifyNote(id, newContent) {
   const notes = getNotes();
-  const targetNote = notes.filter((note) => note.id == id)[0];
+  const targetNote = notes.find((note) => note.id == id);
 
-  targetNote.content = newContent;
-  saveNotes(notes);
+  if (targetNote) {
+      targetNote.content = newContent;
+      saveNotes(notes);
+  }
 }
 
-
-
+function removeNoteAndElement(id, element) {
+  let notes = getNotes();
+  notes = notes.filter(note => note.id != id);
+  saveNotes(notes);
+  element.remove();
+}
