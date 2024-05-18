@@ -1,3 +1,13 @@
+
+function displayTime(){
+  var d = new Date();
+  var hour = d.getHours();
+  var min = d.getMinutes();
+  var sec = d.getSeconds();
+  document.getElementById('clock').innerHTML = hour + ':' + min + ':' + sec;
+}
+setInterval(displayTime, 1000);
+// Gebruiken van template literals en constante
 document.addEventListener('DOMContentLoaded', function () {
   const welcome = "Welcome";
   const zin = `${welcome} to my personal diary!`;
@@ -8,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const notesContainer = document.getElementById("notes");
 const addNoteButton = notesContainer.querySelector(".add_note");
-
+// hieronder gebruik ik een aantal keer de "arrow-function"
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);
   notesContainer.insertBefore(noteElement, addNoteButton);
@@ -25,7 +35,7 @@ notesContainer.addEventListener("dblclick", (event) => {
     }
   }
 });
-
+// Hier ga ik tewerk met localStorage en ook JSON
 function getNotes() {
   return JSON.parse(localStorage.getItem("notes") || "[]");
 }
@@ -78,3 +88,6 @@ function removeNoteAndElement(id, element) {
   saveNotes(notes);
   element.remove();
 }
+
+
+// Vanaf deze lijn gaat het tewerk met het unsplash API
