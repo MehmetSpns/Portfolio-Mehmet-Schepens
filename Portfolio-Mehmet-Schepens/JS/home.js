@@ -89,5 +89,3 @@ function removeNoteAndElement(id, element) {
   element.remove();
 }
 
-
-// Vanaf deze lijn gaat het tewerk met het unsplash API

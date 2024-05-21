@@ -8,12 +8,12 @@ Destructuring
 Spread & Rest operator
 Iteration over een array
 Arrow function --> DONE
-Callback function
-Promise
+Callback function --> DONE
+Promise --> DONE
 Consumer methods
-Async & Await --> use it with fetch!!!
+Async & Await --> DONE
 Self executing function
-Fetch om data op te halen 
+Fetch om data op te halen --> DONE
 JSON manipuleren en weergeven --> DONE
 Basis CSS Animatie 
 Gebruiken van een flexbox of CSS grid --> DONE
@@ -30,7 +30,7 @@ https://blog.logrocket.com/localstorage-javascript-complete-guide/
 Invoegen van een smiley:
 https://www.w3schools.com/charsets/tryit.asp?deci=9786
 
-Picture API --> free to use!!!
+Picture API --> free to use!!! + documentatie
 https://unsplash.com/developers 
 
 API komt van een opzoek in chatgpt:
