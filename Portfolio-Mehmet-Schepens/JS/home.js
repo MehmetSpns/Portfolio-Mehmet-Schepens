@@ -1,20 +1,23 @@
 
-function displayTime(){
-  var d = new Date();
-  var hour = d.getHours();
-  var min = d.getMinutes();
-  var sec = d.getSeconds();
-  document.getElementById('clock').innerHTML = hour + ':' + min + ':' + sec;
-}
-setInterval(displayTime, 1000);
-// Gebruiken van template literals en constante
-document.addEventListener('DOMContentLoaded', function () {
-  const welcome = "Welcome";
-  const zin = `${welcome} to my personal diary!`;
+// Invoegen van een self exectuing function
+(function() {
+  function displayTime(){
+    var d = new Date();
+    var hour = d.getHours();
+    var min = d.getMinutes();
+    var sec = d.getSeconds();
+    document.getElementById('clock').innerHTML = hour + ':' + min + ':' + sec;
+  }
+  setInterval(displayTime, 1000)
+  // Gebruiken van template literals en constante
+  document.addEventListener('DOMContentLoaded', function () {
+    const welcome = "Welcome";
+    const zin = `${welcome} to my personal diary!`;
 
-  const welcomeZin = document.getElementById('template-literal');
-  welcomeZin.innerHTML = zin;
-});
+    const welcomeZin = document.getElementById('template-literal');
+    welcomeZin.innerHTML = zin;
+  });
+})();
 
 const notesContainer = document.getElementById("notes");
 const addNoteButton = notesContainer.querySelector(".add_note");
@@ -88,4 +91,16 @@ function removeNoteAndElement(id, element) {
   saveNotes(notes);
   element.remove();
 }
+// invoegen van een animatie bij het aanvinken van de checkbox (anders werkt het animatie niet buiten dezelfde div)
+document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.getElementById('checkbox');
+  const squareAnimation = document.querySelector('.squareAnimation');
 
+  checkbox.addEventListener('change', function() {
+    if (checkbox.checked) {
+      squareAnimation.classList.add('animate');
+    } else {
+      squareAnimation.classList.remove('animate');
+    }
+  });
+});

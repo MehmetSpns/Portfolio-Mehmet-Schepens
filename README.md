@@ -10,12 +10,12 @@ Iteration over een array
 Arrow function --> DONE
 Callback function --> DONE
 Promise --> DONE
-Consumer methods
+Consumer methods --> DONE
 Async & Await --> DONE
-Self executing function
+Self executing function --> DONE
 Fetch om data op te halen --> DONE
 JSON manipuleren en weergeven --> DONE
-Basis CSS Animatie 
+Basis CSS Animatie --> DONE
 Gebruiken van een flexbox of CSS grid --> DONE
 Gebruik van LocalStorage --> DONE
 
