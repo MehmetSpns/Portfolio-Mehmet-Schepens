@@ -12,6 +12,8 @@ function loginOut() {
 
 
 function checkLogs() {
+    event.preventDefault();
+
     var username = document.getElementById('username2').value.trim();
     var password = document.getElementById('password2').value.trim();
 
