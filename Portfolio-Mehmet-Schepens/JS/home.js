@@ -1,5 +1,5 @@
 
-// Invoegen van een self exectuing function
+// Invoegen van een self executing function
 (function() {
   function displayTime(){
     var d = new Date();
@@ -22,13 +22,15 @@
 const notesContainer = document.getElementById("notes");
 const addNoteButton = notesContainer.querySelector(".add_note");
 // hieronder gebruik ik een aantal keer de "arrow-function"
+// hier gebruik ik consumer methods (for-each)
+// hier gebruk ik array iteration methods
 getNotes().forEach((note) => {
   const noteElement = createNoteElement(note.id, note.content);
   notesContainer.insertBefore(noteElement, addNoteButton);
 });
 
 addNoteButton.addEventListener("click", () => addNote());
-
+// hieronder gebruik ik een aantal keer de "arrow-function"
 notesContainer.addEventListener("dblclick", (event) => {
   if (event.target.classList.contains("note")) {
     const noteId = event.target.dataset.id;
@@ -95,8 +97,9 @@ function removeNoteAndElement(id, element) {
 document.addEventListener('DOMContentLoaded', function() {
   const checkbox = document.getElementById('checkbox');
   const squareAnimation = document.querySelector('.squareAnimation');
-
-  checkbox.addEventListener('change', function() {
+// gebruik van destructuring (target)
+  checkbox.addEventListener('change', ({ target }) => {
+    const checkbox = target;
     if (checkbox.checked) {
       squareAnimation.classList.add('animate');
     } else {
@@ -104,3 +107,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+// Spread & Rest operator-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+const cijfers = [1, 2, 3, 4, 5];
+
+// Hier gebruik ik de spread operator
+const spread = [...cijfers];
+
+// hier gebruik ik de rest operator
+const sum = (...args) => {
+  return args.reduce((total, current) => total + current, 0);
+};
+
+console.log(spread);
+console.log(sum(1, 2, 3, 4, 5));

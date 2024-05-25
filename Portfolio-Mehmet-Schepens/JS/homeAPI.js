@@ -1,12 +1,13 @@
 // Picture/unplash API
 
 document.getElementById('picSearchBtn').addEventListener('click', searchPictures);
+// hier gebruik ik een constante
 const token = '8m5NFf5G8_R6vOSJRUP7LG6cu2hypx6bQbDHb_Ua13I';
-// Hier maak ik gebruik van een async function
+// Hier maak ik gebruik van een async | await |promises functions
 async function searchPictures() {
     const input = document.getElementById('pictureSearcher').value;
     try {
-        // Hier fetch ik data direct van Unsplash API
+        // Hier fetch ik data direct van Unsplash API + template literals
         const response = await fetch(`https://api.unsplash.com/search/photos?query=${input}&client_id=${token}`);
         // Hier voer ik een error uit als de response niet ok is
         if (!response.ok) {

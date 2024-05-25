@@ -4,9 +4,9 @@ Event aan een element koppelen --> DONE
 Formulier valideren --> DONE
 Gebruiken van een constante --> DONE
 Gebruiken van template literals --> DONE
-Destructuring
-Spread & Rest operator
-Iteration over een array
+Destructuring --> DONE
+Spread & Rest operator --> DONE
+Iteration over een array --> DONE
 Arrow function --> DONE
 Callback function --> DONE
 Promise --> DONE
@@ -38,4 +38,7 @@ https://chatgpt.com/share/de22d4d9-9eb8-4768-b0d8-3ddf579d2c5a
 
 async|await function:
 https://www.w3schools.com/js/js_async.asp
+
+Destructuring:
+https://www.w3schools.com/js/js_destructuring.asp
 

@@ -15,6 +15,7 @@ header h1 {
   font-size: larger;
   text-shadow: 0 0 5px white;
 }
+/* hier gebruik ik flexbox \/ */
 main {
   display: flex;
   flex-direction: column;
