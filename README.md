@@ -2,8 +2,8 @@
 <img src="https://github.com/MehmetSpns/Portfolio-Mehmet-Schepens/assets/132590961/737adc0d-db34-4cf0-afc0-7e7b38993ad4" width="100">
 
 ## Benodigdheden
-- Elementen selecteren --> DONE
-- Elementen manipuleren --> DONE
+- Elementen selecteren --> DONE 
+- Elementen manipuleren --> DONE 
 - Event aan een element koppelen --> DONE
 - Formulier valideren --> DONE
 - Gebruiken van een constante --> DONE
@@ -16,11 +16,11 @@
 - Promise --> DONE
 - Consumer methods --> DONE
 - Async & Await --> DONE
-- Self executing function --> DONE
 - Fetch om data op te halen --> DONE
+- Self executing function --> DONE
 - JSON manipuleren en weergeven --> DONE
 - Basis CSS Animatie --> DONE
-- Gebruiken van een flexbox of CSS grid --> DONE
+- Gebruiken van een **flexbox** of CSS grid --> DONE
 - Gebruik van LocalStorage --> DONE
 
 ## DOCUMENTATIE

@@ -13,12 +13,12 @@ function loginOut() {
 function saveData() {
     var username = document.getElementById('username').value.trim();
     var password = document.getElementById('password').value.trim();
-
+    // Hier gebruik ik formulier validatie
     if (!username || !password) {
         alert("Please fill in all fields!");
         return;
     }
-
+    // hier gebruk ik array iteration methods
     var users = JSON.parse(localStorage.getItem('users')) || [];
     if (users.some((v) => v.username === username)) {
         alert("Username already exists");

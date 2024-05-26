@@ -22,7 +22,7 @@ function checkLogs() {
     var password = document.getElementById('password2').value.trim();
 
     var users = JSON.parse(localStorage.getItem('users'));
-
+    // hier gebruk ik array iteration methods
     var user = users.find((user) => user.username === username)  || [];
     console.log(user);
     if (user) {
