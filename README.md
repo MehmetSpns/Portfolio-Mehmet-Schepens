@@ -2,26 +2,55 @@
 <img src="https://github.com/MehmetSpns/Portfolio-Mehmet-Schepens/assets/132590961/737adc0d-db34-4cf0-afc0-7e7b38993ad4" width="100">
 
 ## Benodigdheden
-- Elementen selecteren --> DONE 
-- Elementen manipuleren --> DONE 
-- Event aan een element koppelen --> DONE
-- Formulier valideren --> DONE
-- Gebruiken van een constante --> DONE
-- Gebruiken van template literals --> DONE
-- Destructuring --> DONE
-- Spread & Rest operator --> DONE
-- Iteration over een array --> DONE
-- Arrow function --> DONE
-- Callback function --> DONE
-- Promise --> DONE
-- Consumer methods --> DONE
-- Async & Await --> DONE
-- Fetch om data op te halen --> DONE
-- Self executing function --> DONE
-- JSON manipuleren en weergeven --> DONE
-- Basis CSS Animatie --> DONE
-- Gebruiken van een **flexbox** of CSS grid --> DONE
-- Gebruik van LocalStorage --> DONE
+- Elementen selecteren:
+    **home.js** line 9, 27 - 18, 43, 49-56, 67-68, 116, 117 
+- Elementen manipuleren:
+    **home.js** line 9, 21, 27 - 28, 36, 67, 82-87, 90, 115 - 129
+- Event aan een element koppelen:
+    **home.js** line 16, 42, 48, 75, 114, 120
+    **homeAPI.js** line 3
+- Formulier valideren:
+    **login.js** line 14 - 39
+    **register.js** line 17 - 20
+- Gebruiken van een constante:
+    **home.js** line een beetje overal in het js bestand
+    **homeAPI.js** line 5, 8, 11, 16, 25, 35
+- Gebruiken van template literals:
+    **home.js** line 17
+    **homeAPI.js** line 11
+- Destructuring:
+    **home.js** line 119
+- Spread & Rest operator:
+    **home.js** line 128 - 140
+- Iteration over een array:
+    **home.js** line 31
+- Arrow function:
+    **home.js** line 31, 41, 47, 74, 119, 135
+    **login.js** line 26, 30
+- Callback function:
+    **home.js** line 11, 15, 41, 47
+- Promise:
+    **homeAPI.js** line 7 -22
+- Consumer methods:
+    **home.js** line 31
+- Async & Await:
+    **homeAPI.js** line 7 -22
+- Fetch om data op te halen:
+    **homeAPI.js** line 11
+- Self executing function:
+    **home.js** line 2 -22
+- JSON manipuleren en weergeven:
+    **login.js** line 24
+- Basis CSS Animatie:
+    **home.css** line 162 - 225
+- Gebruiken van een **flexbox** of CSS grid:
+    **home.css** line 20, 25, 30, 55, 60, 64, 69, 83, 112, 119, 127, 147, 206
+    **register.css** line 2, 25, 34
+    **login.css** line 2, 25, 34
+- Gebruik van LocalStorage:
+    **login.js** line 24,
+    **register.js** line 22, 31
+    **home.js** line 58, 61
 
 ## DOCUMENTATIE
 - [Add functie voor de notes](https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13 )

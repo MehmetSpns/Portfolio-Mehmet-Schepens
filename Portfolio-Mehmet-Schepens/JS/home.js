@@ -1,4 +1,3 @@
-
 // Invoegen van een self executing function
 (function () {
   function displayTime() {
@@ -23,7 +22,6 @@
 })();
 //maniplaatie van elementen
 // Hier selecteer ik een element
-// Hier koppel ik een event aan een element
 const notesContainer = document.getElementById("notes");
 const addNoteButton = notesContainer.querySelector(".add_note");
 
