@@ -3,54 +3,54 @@
 
 ## Benodigdheden
 - Elementen selecteren:<br>
-    **home.js** line 9, 27 - 18, 43, 49-56, 67-68, 116, 117 
+    **home.js** line 9, 27 - 18, 43, 49-56, 67-68, 116, 117 <br>
 - Elementen manipuleren:<br>
-    **home.js** line 9, 21, 27 - 28, 36, 67, 82-87, 90, 115 - 129
+    **home.js** line 9, 21, 27 - 28, 36, 67, 82-87, 90, 115 - 129<br>
 - Event aan een element koppelen:<br>
     **home.js** line 16, 42, 48, 75, 114, 120<br>
-    **homeAPI.js** line 3
+    **homeAPI.js** line 3<br>
 - Formulier valideren:<br>
     **login.js** line 14 - 39<br>
-    **register.js** line 17 - 20
+    **register.js** line 17 - 20<br>
 - Gebruiken van een constante:<br>
     **home.js** line een beetje overal in het js bestand<br>
-    **homeAPI.js** line 5, 8, 11, 16, 25, 35
+    **homeAPI.js** line 5, 8, 11, 16, 25, 35<br>
 - Gebruiken van template literals:<br>
     **home.js** line 17<br>
-    **homeAPI.js** line 11
+    **homeAPI.js** line 11<br>
 - Destructuring:<br>
-    **home.js** line 119
+    **home.js** line 119<br>
 - Spread & Rest operator:<br>
-    **home.js** line 128 - 140
+    **home.js** line 128 - 140<br>
 - Iteration over een array:<br>
-    **home.js** line 31
+    **home.js** line 31<br>
 - Arrow function:<br>
     **home.js** line 31, 41, 47, 74, 119, 135<br>
-    **login.js** line 26, 30
+    **login.js** line 26, 30<br>
 - Callback function:<br>
-    **home.js** line 11, 15, 41, 47
+    **home.js** line 11, 15, 41, 47<br>
 - Promise:<br>
-    **homeAPI.js** line 7 -22
+    **homeAPI.js** line 7 -22<br>
 - Consumer methods:<br>
-    **home.js** line 31
+    **home.js** line 31<br>
 - Async & Await:<br>
-    **homeAPI.js** line 7 -22
+    **homeAPI.js** line 7 -22<br>
 - Fetch om data op te halen:<br>
-    **homeAPI.js** line 11
+    **homeAPI.js** line 11<br>
 - Self executing function:<br>
-    **home.js** line 2 -22
+    **home.js** line 2 -22<br>
 - JSON manipuleren en weergeven:<br>
-    **login.js** line 24
+    **login.js** line 24<br>
 - Basis CSS Animatie:<br>
-    **home.css** line 162 - 225
+    **home.css** line 162 - 225<br>
 - Gebruiken van een **flexbox** of CSS grid:<br>
     **home.css** line 20, 25, 30, 55, 60, 64, 69, 83, 112, 119, 127, 147, 206<br>
     **register.css** line 2, 25, 34<br>
-    **login.css** line 2, 25, 34
+    **login.css** line 2, 25, 34<br>
 - Gebruik van LocalStorage:<br>
     **login.js** line 24,<br>
     **register.js** line 22, 31<br>
-    **home.js** line 58, 61
+    **home.js** line 58, 61<br>
 
 ## DOCUMENTATIE
 - [Add functie voor de notes](https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13 )
